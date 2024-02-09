@@ -1,0 +1,55 @@
+PS C:\glpk-5.0\examples> glpsol --model oper527homework.mod
+GLPSOL--GLPK LP/MIP Solver 5.0
+Parameter(s) specified in the command line:
+ --model oper527homework.mod
+Reading model section from oper527homework.mod...
+84 lines were read
+Generating obj...
+Generating con1...
+Generating con2...
+Generating con3...
+Generating con4...
+Generating con5...
+Generating con6...
+Model has been successfully generated
+GLPK Integer Optimizer 5.0
+153 rows, 720 columns, 4320 non-zeros
+720 integer variables, all of which are binary
+Preprocessing...
+124 rows, 216 columns, 1080 non-zeros
+216 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 124
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+124 rows, 216 columns, 1080 non-zeros
+      0: obj =   0.000000000e+00 inf =   2.200e+01 (22)
+     31: obj =   5.900000000e+01 inf =   0.000e+00 (0)
+*    52: obj =   5.000000000e+01 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    52: mip =     not found yet >=              -inf        (1; 0)
++    52: >>>>>   5.000000000e+01 >=   5.000000000e+01   0.0% (1; 0)
++    52: mip =   5.000000000e+01 >=     tree is empty   0.0% (0; 1)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   0.0 secs
+Memory used: 1.3 Mb (1349204 bytes)
+Dr. BOONE teaches SUB1 in room 1 at time 1:00
+Dr. BOONE teaches SUB2 in room 1 at time 2:00
+Dr. BOONE teaches SUB3 in room 1 at time 3:00
+Dr. HURLBERT teaches SUB3 in room 3 at time 1:00
+Dr. HURLBERT teaches SUB4 in room 1 at time 4:00
+Dr. HURLBERT teaches SUB5 in room 1 at time 5:00
+Dr. BUSHAW teaches SUB5 in room 3 at time 2:00
+Dr. BUSHAW teaches SUB6 in room 1 at time 6:00
+Dr. BUSHAW teaches SUB7 in room 2 at time 1:00
+Dr. LARSON teaches SUB8 in room 2 at time 2:00
+Dr. LARSON teaches SUB9 in room 2 at time 3:00
+Dr. LARSON teaches SUB10 in room 2 at time 4:00
+The minimum value is 50.000000
+Model has been successfully processed
+PS C:\glpk-5.0\examples>
